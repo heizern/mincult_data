@@ -4,7 +4,7 @@ library(jsonlite)
 library(purrr)
 
 # Чтение файла CSV, проверка
-data <- read.csv("D://Katerina Lysenko//vkr//data-51-structure-6.csv",  row.names = NULL, sep=",")
+data <- read.csv("path/file.csv",  row.names = NULL, sep=",")
 
 print(names(data))
 
@@ -48,5 +48,5 @@ colnames(data) <- c("lat", "long", "type")
 print(colnames(data))
 
 
-write.csv(data_clean, "D://Katerina Lysenko//vkr//okn_clean.csv", row.names = FALSE)
+write.csv(data_clean, "path2/file2.csv", row.names = FALSE)
 print ("ready")
